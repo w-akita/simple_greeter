@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= @document_title %></title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <h1>SimpleGreeter<h1>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+    <footer>
+      &copy; 2016 Oiax Inc.
+    </footer>
+  </body>
+</html>
