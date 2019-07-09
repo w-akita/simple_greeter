@@ -2,7 +2,11 @@
     @document_title = "SimpleGreeter (#{@name})"
 %>
 <div class="card m-1">
-    <div class = "card-block">
-        <p class="card-text">Hello, <%= @name %>!</p>
+    <%= image_tag 'robot.svg', alt:'Robot' "w-10 p-3", style:'max-width:320px'%>
+    <div class = "card-block bg-dark text-white">
+        <p class="card-text text-xs-center lead">
+            <i class="far fa-thumbs-up"></i>
+            Hello, <%= @name %>!
+        </p>
     </div>
 </div>
